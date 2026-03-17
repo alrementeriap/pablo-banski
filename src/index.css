@@ -11,6 +11,10 @@
   --color-bg-light: #EEE6DA;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
     @apply bg-bg-light text-primary font-sans antialiased;

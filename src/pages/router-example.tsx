@@ -1,29 +1,30 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout, ScrollToHash } from './components';
+import { Layout } from '../components';
 import { 
-  HomePage, 
   AnsiedadPage, 
   DueloPage, 
   RegulacionEmocionalPage, 
   AdolescentesPage 
-} from './pages';
+} from './index';
 
 /**
- * Main App component that serves as the routing shell.
- * It uses the Layout component to wrap all pages with Navbar and Footer.
+ * Example of how to integrate the new specialty pages using react-router-dom.
+ * 
+ * To use this, you would:
+ * 1. Install react-router-dom: npm install react-router-dom
+ * 2. Update your main App component or entry point to use a Router.
  */
-function App() {
+
+const AppRouter = () => {
   return (
     <BrowserRouter>
-      <ScrollToHash />
       <Layout>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          {/* Your existing Home component would go here */}
+          <Route path="/" element={<div>Home Component (Existing App content)</div>} />
+          
+          {/* New Specialty Pages */}
           <Route path="/ansiedad" element={<AnsiedadPage />} />
           <Route path="/duelo" element={<DueloPage />} />
           <Route path="/regulacion-emocional" element={<RegulacionEmocionalPage />} />
@@ -32,6 +33,6 @@ function App() {
       </Layout>
     </BrowserRouter>
   );
-}
+};
 
-export default App;
+export default AppRouter;
