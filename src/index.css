@@ -4,11 +4,11 @@
   --font-display: "Newsreader", serif;
   --font-sans: "Inter", sans-serif;
 
-  --color-primary: #354D4F;
-  --color-accent: #A94031;
-  --color-muted: #5A6165;
-  --color-secondary: #C88474;
-  --color-bg-light: #F4F2EB;
+  --color-primary: #3F5553;
+  --color-accent: #A14E3B;
+  --color-muted: #6F6A64;
+  --color-secondary: #C98C72;
+  --color-bg-light: #EEE6DA;
 }
 
 @layer base {

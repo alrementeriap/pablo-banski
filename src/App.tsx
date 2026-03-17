@@ -424,9 +424,9 @@ export default function App() {
         </section>
 
         <section
-          id="especialidades"
-          className="scroll-mt-32 bg-primary/5 py-20 md:py-32 px-6 md:px-12 relative overflow-hidden"
-        >
+  id="especialidades"
+  className="scroll-mt-32 bg-primary/[0.07] py-20 md:py-32 px-6 md:px-12 relative overflow-hidden"
+>
           <img
             src={aboutArt}
             className="absolute bottom-0 right-0 w-1/3 opacity-[0.04] pointer-events-none translate-y-1/4 translate-x-1/4"
@@ -530,9 +530,9 @@ export default function App() {
         </section>
 
         <section
-          id="faq"
-          className="scroll-mt-32 bg-primary py-20 md:py-32 px-6 md:px-12 text-bg-light"
-        >
+  id="faq"
+  className="scroll-mt-32 bg-primary/95 py-20 md:py-32 px-6 md:px-12 text-bg-light"
+>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
