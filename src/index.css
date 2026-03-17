@@ -3,7 +3,7 @@
 @theme {
   --font-display: "Newsreader", serif;
   --font-sans: "Inter", sans-serif;
-  
+
   --color-primary: #354D4F;
   --color-accent: #A94031;
   --color-muted: #5A6165;
@@ -15,10 +15,8 @@
   body {
     @apply bg-bg-light text-primary font-sans antialiased;
   }
-  
+
   :focus-visible {
     @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg-light;
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@300;400;500;600&display=swap');

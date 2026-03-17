@@ -16,7 +16,7 @@ export default async function handler(req: any, res: any) {
 
     const data = await resend.emails.send({
       from: 'Web Pablo Banski <onboarding@resend.dev>',
-      to: ['pr.banski@gmail.com'],
+      to: ['al.rementeriap@gmail.com'],
       subject: `Nueva consulta desde la web - ${name}`,
       replyTo: email,
       html: `
@@ -24,7 +24,7 @@ export default async function handler(req: any, res: any) {
         <p><strong>Nombre:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Mensaje:</strong></p>
-        <p>${message.replace(/\n/g, '<br />')}</p>
+        <p>${String(message).replace(/\n/g, '<br />')}</p>
       `,
     });
 
